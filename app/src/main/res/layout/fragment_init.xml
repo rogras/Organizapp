@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:background="#E0E2DB"
+tools:context=".MainActivity$PlaceholderFragment">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facultat de Ciències de l&apos;Educació i Psicologia"
+            android:id="@+id/nom_estudis"
+            android:layout_below="@+id/textView"
+            android:textSize="12pt"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/studies"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/header_container">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Horari Classe"
+            android:textColor="#FFFFFF"
+            android:id="@+id/button"
+            android:layout_marginBottom="10dp"
+            android:background="#EA396F"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Horari Bus"
+            android:id="@+id/button2"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/button"
+            android:background="#FDAE3D"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Calendari"
+            android:id="@+id/button3"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/button2"
+            android:background="#346DC7"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Llistat Docent"
+            android:id="@+id/button4"
+            android:textColor="#FFFFFF"
+            android:onClick="goToOp4"
+            android:layout_below="@id/button3"
+            android:background="#6342A4"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Compartir cotxe"
+            android:textColor="#FFFFFF"
+            android:id="@+id/button5"
+            android:layout_below="@id/button4"
+            android:background="#7AABBF"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
